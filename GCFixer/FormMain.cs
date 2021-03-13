@@ -41,13 +41,13 @@ namespace GCFixer
         private void ButtonUnfix_Click(object sender, EventArgs e) {
             try {
                 if (SetIncrementalMode(false)) {
-                    MessageBox.Show("Sucessfully fixed Beat Sabers GC", "GC Fixer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Sucessfully unfixed Beat Sabers GC", "GC Fixer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Application.Exit();
                 } else {
                     MessageBox.Show("Beat Sabers GC is already unfixed", "GC Fixer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             } catch (Exception) {
-                MessageBox.Show("Failed to fix Beat Sabers GC", "GC Fixer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed to unfix Beat Sabers GC", "GC Fixer", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
